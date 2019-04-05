@@ -1,64 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="text/css" href="assets/css/style1.css">
-        <title>Contact Me</title>
-    </head>
 
-    <!-- Site Header -->
-    <header>
-        <!-- h1: My Name -->
-        <h1>Robert Weston</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Robert Weston</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
 
-        <h3><a href="index.html">About</a></h3>
-        <h3><a href="portfolio.html">Portfolio</a></h3>
-        <h3 id="contactLink"><a href="contact.html">Contact</a></h3>
+<body>
 
-        <!-- Buttons 
-        <button type="index.html">About</button>
-        <button type="portfolio.html">Portfolio</button>
-        <button id="button3" type="contact.html">Contact</button>
-        -->
-    </header>
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Robert Weston</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-    <body class="container">
-        <div>
-            <!-- Section 1 -->
-            <section id="bio">
-                    <h2>Contact</h2>
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
 
-                    <form action="/action_page.php">
-                        Name: <br><input type="text" name="Name" value="John Smith"><br>
-                        Email: <br><input type="text" email="Email" value="example@gmail.com"><br>
-                        Message: <!--<br><input class="wideInput" id="message" type="text" message="Message"><br> -->
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
 
-                        <!--<input id="submit" type="submit" value="Submit"> -->
-                    </form>
+    </section>
 
-                    <textarea rows="14" cols="125"></textarea>
-                    <div id="submit">Submit</div>
-                    <!--
-                    <form id="submit">
-                        <input id="submit" type="submit" value="Submit">
-                    </form>
-                    -->
-                    <!--
-                    <p>Name</p>
-        
-                    <p>Email</p>
-        
-                    <p>Message</p>
-                    
-                    
-                    <button id="submit" type="submit">Submit</button-->
-            </section>
+  </div>
 
-        </div>
-
-        <footer>Copyright</footer>
-    </body>
-
+  <footer>
+    <div class="container">
+      Copyright &copy; 
+    </div>
+  </footer>
+</body>
 
 </html>
